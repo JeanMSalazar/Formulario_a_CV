@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Trabajo N2</title>
+  </head>
+  <body>
+    <p>Datos para Curriculum Vitae</p>
+
+  <form action = "{{ url_for('hello') }}" method="post">
+
+    <input type="text" name="name" placeholder="enter your name">
+    <br/>  <br/>
+
+    <label for="start">Fecha de nacimiento:</label><br/>
+
+    <input type="date" id="start" name="trip-start"
+       value="1990-01-01"
+       min="1980-01-01" max="2004-12-31">
+
+    <br/>  <br/>
+
+    <input type="text" name="ocupacion" placeholder="enter occupation">
+    <br/>  <br/>
+    <input type="text" name="contacto" placeholder="enter contact(telefono, email)">
+    <br/>  <br/>
+    <select name="select">
+      <option value="Peru">Peru</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Brasil">Brasil</option>
+    </select>
+    <br/>
+
+    <fieldset>
+    <legend>Select a english level:</legend>
+    <div>
+      <input type="radio" id="intermedio" name="level" value="intermedio"
+             checked>
+      <label for="intermedio">intermedio</label>
+    </div>
+    <div>
+      <input type="radio" id="avanzado" name="level" value="avanzado">
+      <label for="avanzado">avanzado</label>
+    </div>
+    <div>
+      <input type="radio" id="fluido" name="level" value="fluido">
+      <label for="fluido">fluido</label>
+    </div>
+</fieldset>
+
+    <br/>
+
+  <form id="form1">
+    <select width=300
+            style="width: 350px">
+      <option value='c++'>c++</option>
+      <option value='Python'>Python</option>
+      <option value='Java'>Java</option>
+      <option value='Javascript'>Javascript</option>
+      <option value='' selected>Selected a language</option>
+    </select>
+  </form>
+<br/>
+    <label>Aptitudes:
+  <input list="browsers" name="myBrowser" /></label>
+  <datalist id="browsers">
+  <option value="Resolucion de Problemas">
+  <option value="Tenacidad">
+  <option value="Trabajo en grupo">
+  <option value="Resistencia al estres">
+  <option value="Creatividad">
+  <option value="Espiritu de adaptacion">
+</datalist>
+<br/><br/>
+    <label>Habilidades:</label><br/>
+    <label><input type="checkbox" id="cbox1" value="first_checkbox"> Motivacion</label><br/>
+    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Liderazgo</label><br/>
+    <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3">Paciencia</label><br/>
+    <input type="checkbox" id="cbox4" value="four_checkbox"> <label for="cbox4">Persuasion</label><br/>
+    <input type="checkbox" id="cbox5" value="five_checkbox"> <label for="cbox5">Comunicacion</label><br/>
+
+    <br/>
+    <textarea name="textarea" rows="10" cols="50">Perfil: </textarea>
+    <br/>
+
+  <button>submit</button>
+
+  </form>
+  </body>
+
+</html>
